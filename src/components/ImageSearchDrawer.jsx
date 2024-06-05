@@ -6,8 +6,8 @@ const ImageSearchDrawer = ({ images, isOpen, onClose }) => {
   const [searchResults, setSearchResults] = useState([]);
 
   const searchImage = async (imageUrl) => {
-    const API_KEY = process.env.REACT_APP_API_KEY;
-    const CX = process.env.REACT_APP_CX;
+    const API_KEY = import.meta.env.VITE_API_KEY;
+    const CX = import.meta.env.VITE_CX;
     const response = await axios.get(
       `https://www.googleapis.com/customsearch/v1?q=${imageUrl}&searchType=image&key=${API_KEY}&cx=${CX}`
     );
