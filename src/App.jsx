@@ -13,7 +13,7 @@ const App = () => {
   return (
     <div className="app">
       <div>
-        <img src="https://unsplash.com/assets/api/applications/product-hunt-b8424efdce87891318ee83fdc29686483b57d0fae947ec2ec17f829855793a8b.jpg" alt="image"/>
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREoZy5hFhKV6hlX-FNDfLXag3_m5jAyGgFL9p7QWG_Spz6p-O0" alt="image"/>
       </div>
       <button onClick={() => setIsDrawerOpen(true)}>Search Images with Google</button>
       <ImageSearchDrawer
